@@ -1,9 +1,11 @@
 <template name="MainLayout">
-    <header>
+    <!-- <header>
         <h1>My recipes book</h1>
         {{>loginButtons}}
-    </header>
-    <main>
+    </header> -->
+    {{> Header}}
+    {{> SideNav}}
+    <main class="main-layout">
         {{> Template.dynamic template=main}}
     </main>
 </template>

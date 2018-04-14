@@ -39,30 +39,13 @@ RecipeSchema = new SimpleSchema({
         type: String,
         label: "Descriptions"
     },
+    
     ingredients: {
         type: Array
     },
     "ingredients.$": {
         type: Ingredient
     },
-    // ingredients:{
-    //     type: [Ingredient]
-    // },
-    // comments: {
-    //     type: [Object],
-    //     optional: true,
-    //     maxCount: 50
-    // },
-    // 'comments.$.userId': {
-    //     type: String
-    // },
-    // 'comments.$.date': {
-    //     type: Date
-    // },
-    // 'comments.$.text': {
-    //     type: String,
-    //     max: 500
-    // },
 
     author: {
         type: String,
