@@ -5,6 +5,7 @@ accounts-ui-unstyled@1.4.1
 aldeed:autoform@6.3.0
 aldeed:collection2-core@2.1.2
 allow-deny@1.1.0
+astrocoders:one-signal@0.0.2
 autoupdate@1.4.0
 babel-compiler@7.0.7
 babel-runtime@1.2.2
