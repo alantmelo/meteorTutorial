@@ -8,6 +8,10 @@ Recipes.allow({
     insert: function (userId, doc){
         // Verificando se o usuário realmente existe.
         return !!userId;
+    },
+
+    update: function(userId, doc){
+        return !!userId;
     }
 });
 
@@ -67,6 +71,17 @@ RecipeSchema = new SimpleSchema({
         autoform: {
             type: 'hidden'
         }
+    }
+});
+
+
+Meteor.methods({
+    toggleMenuItem: function name(id, currentState) {
+        Recipes.update(id, {
+            $set: {
+                inMenu: !currentState
+            }
+        });
     }
 });
 
